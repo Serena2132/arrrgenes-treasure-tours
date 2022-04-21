@@ -4,9 +4,7 @@ html {
   font-family: "Libre Baskerville", serif;
 }
 
-*,
-*::before,
-*::after {
+*,*::before,*::after {
   box-sizing: inherit;
 }
 
@@ -56,6 +54,16 @@ body {
   text-decoration: none;
 }
 
+.nav a:focus {
+  outline: 3px solid #fff;
+  background-color: #bea59b;
+  outline-offset: 1px;
+}
+
+.nav a:hover {
+  background-color: #bea59b;
+}
+
 .banner {
   display: grid;
   grid-template-columns: 1fr;
@@ -63,6 +71,7 @@ body {
   grid-template-areas: "banner";
   color: #fff;
   font-size: 1.5rem;
+  background-color: black;
 }
 
 .banner img {
@@ -70,7 +79,7 @@ body {
   width: 100%;
 }
 
-.banner div {
+.banner article {
   grid-area: banner;
   align-self: center;
   justify-self: center;
@@ -93,6 +102,18 @@ body {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
+}
+
+.banner a:focus {
+  outline: 3px solid #fff;
+  background-color: #bea59b;
+  outline-offset: 1px;
+}
+
+.banners a:hover {
+  outline: 3px solid #bea59b;
+  background-color: #fff;
+  color: #522806;
 }
 
 .ship {
@@ -145,6 +166,6 @@ body {
   padding: 1rem;
 }
 
-.footer * {
+.footer p {
   margin: 0;
 }
