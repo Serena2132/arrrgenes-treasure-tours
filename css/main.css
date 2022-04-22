@@ -4,7 +4,9 @@ html {
   font-family: "Libre Baskerville", serif;
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
